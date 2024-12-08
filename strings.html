@@ -1,0 +1,58 @@
+<!-- Christerfer James 7 Dec 2024-->
+ <!-- DOCTYPE page type-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title> Palindrome and String Checker</title>
+</head>
+    <!-- adding link to my main2 CSS file for this page-->
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+        <!-- Header text for page -->
+        <h1> Palindrome Checker </h1>
+  <p>
+    Palindrome Checker 
+  </p>
+        <!-- Adding input text for palindrome-->
+    <input id="text-input">
+    <!-- adding button-->
+    <button id="check-btn">Check</button>
+    <div id="result"></div>
+    <!--adding java script 2 for this html page-->
+    <script src="script2.js"></script>
+<!-- adding an image to the webpage-->
+<p>
+    <img id="validImage" src="valid.jpg">
+    <p>
+<!-- form for user login-->
+<div class="container">
+    <!-- header-->
+        <div class="container">
+            <h1 class="label">User Login</h1>
+            <!--user name and min and max charaters-->
+            <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+                <div class="font">User Name</div>
+                <input autocomplete="off" type="text" name="user"
+                placeholder="Only alphabets" pattern="[a-z&A-Z]{8,20}"
+                title="Only alphabets, minimum length:8, maximum length:20" /><br>
+                <!--Br are spaces in the Html file-->
+                <br>
+                <!--Zip login and max pattern-->
+                <div class="font font2">zip</div>
+                <input type="zip" name="zip"
+                placeholder="only digits" pattern="[0-9]{5}"
+                title="Exactly 5 digits" /><br>
+                <button type="submit">Login</button>
+            </form>
+            
+    <div>
+    <!-- valadaion script page-->
+        <script src="Valid.js"></script>
+    </div>
+
+</body>
+</html>
+
