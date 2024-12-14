@@ -1,21 +1,28 @@
+<!--Christerfer James 14 Dec 24 Assingment 4.1 and 4.2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event page</title>
+    <!--HTML Tabp name-->
+    <title>Moving and Audio page</title>
 <head>
+    <!-- Title of the page-->
     <h1> The Moving PePe</h1>
     <link rel="stylesheet" href="Moving.css">
 </head>
-
+<!-- Image and postion where to start-->
 <img src=Pepe.jpg id='i1' style="position:absolute; left: 400; top: 100;">
 <br><br><br><br>
+<!--Buttons to start and stop the moving image-->
 <input type=button onClick=timer() value='Start'>
 <input type=button onClick=reset1() value='Stop'>
+<!--Showing the X and Y value of the moving image-->
 <div id='msg'></div>
 
+<!-- Adding JavaScript to the HTML page to without creating a JS file-->
 
+<!-- Testing this feature-->
 <script language='JavaScript' type='text/JavaScript'>
     <!--
     var dir_h='right';
@@ -28,8 +35,7 @@
     }
     
     function disp(){
-    var step=2; // to  Change speed change this step value
-    //alert(dir);
+    var step=2; //  Change speed  of the moving image
     
     var y=document.getElementById('i1').offsetTop;
     var x=document.getElementById('i1').offsetLeft;
@@ -69,3 +75,17 @@
     
     //-->
     </script>
+<br><br><br><br>
+<!-- Assingment 4.2 adding audio-->
+    <body>
+        <!-- adding the audio, file form Youtube Audio Library-->
+         <P>Gemini - The Soundlings</P>
+         <!-- Added controls to the sound file-->
+<audio controls >
+    <!--THis is an MP3 file-->
+    <source src="Gemini - The Soundlings.mp3" type="audio/mpeg">
+<!-- THis is a wave file it the web browser can not play the first one-->
+    <source src="Gemini - The Soundlings.wav" type="audio/wav"> 
+</audio>
+
+    </body>
