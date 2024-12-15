@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="Moving.css">
 </head>
 <!-- Image and postion where to start-->
+ <!--Readded meme jpg-->
 <img src=Pepe.jpg id='i1' style="position:absolute; left: 400; top: 100;">
 <br><br><br><br>
 <!--Buttons to start and stop the moving image-->
 <input type=button onClick=timer() value='Start'>
+<!-- stop button stops the image but dose not reset the image-->
 <input type=button onClick=reset1() value='Stop'>
 <!--Showing the X and Y value of the moving image-->
 <div id='msg'></div>
@@ -60,7 +62,7 @@
     else{y=y - step;}
     
     document.getElementById('i1').style.top= y + "px"; // vertical movment
-    document.getElementById('i1').style.left= x + "px"; // horizontal  movment
+    document.getElementById('i1').style.left= x + "px"; // horizontal movment
     
     //////////////////////
     }
