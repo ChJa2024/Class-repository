@@ -1,0 +1,35 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+ 
+#movableImage {
+    position: absolute;
+}
+
+body{
+    background-color: rgb(150, 36, 150);
+    color: rgb(0, 0, 0); 
+}
+
+nav{
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+h1{
+    text-align: center;
+}

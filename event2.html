@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title of the html page-->
+    <title>Moving our image </title>
+        <!-- Title of the page-->
+        <h1> Click buttons to Move Image!</h1>
+    <!-- Link th the new moving style sheet-->
+    <link rel="stylesheet" href="Newmoving.css"/>
+</head>
+<body>
+    <!-- Buttone to direct the meme image and to stop the moving -->
+    <button onclick="startMoving('right')">Move Right</button>
+    <button onclick="startMoving('left')">Move Left</button>
+    <button onclick="startMoving('up')">Move Up</button>
+    <button onclick="startMoving('down')">Move Down</button>
+    <button onclick="stopMoving()">Stop</button>
+    <div id="container">
+        <!--naming the image and picking the image i want to move-->
+        <img id="movableImage" src="Pepe.jpg" />
+    </div>
+    <!-- link to the Java Script command diretional sheet-->
+    <script src="Newmoving.js"></script>
+</body>
+</html>
