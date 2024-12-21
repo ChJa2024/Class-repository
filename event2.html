@@ -5,23 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The title of the html page-->
     <title>Moving our image </title>
-        <!-- Title of the page-->
-        <h1> Click buttons to Move Image!</h1>
+
     <!-- Link th the new moving style sheet-->
     <link rel="stylesheet" href="Newmoving.css"/>
 </head>
 <body>
+    <header style="background-color: #19ac39;">
+            <!-- Title of the page-->
+            <h1> Floating Image!</h1>
     <!-- Buttone to direct the meme image and to stop the moving -->
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="boards.html"> Education</a></li>
+            <li>
+                <a href="#">Class Projects ▾</a>
+                <ul class="dropdown">
+                    <li><a href="event.html">HTML Audio</a></li>
+                    <li><a href="event2.html">Floating Image</a></li>
+                    <li><a href="game.html">Game in HTML</a></li>
+                    <li><a href="strings.html">Palindrome/Login Checker</a></li>
+        </ul>
+        <li><a href="https://jamesartstudio.weebly.com/">My Portfolio</a></li>
+    </nav>
+    <br><br>
+<h1> Adding images to HTML</h1>
+<br>
+<br>
+<P>
+    **Description:** This HTML page assignment involves creating a moving image within an HTML document. The buttons at the top allow you to control the image, enabling it to move across the screen and to stop the movement as needed.
+</P>
+    <br>
+    <div class="container">
     <button onclick="startMoving('right')">Move Right</button>
     <button onclick="startMoving('left')">Move Left</button>
     <button onclick="startMoving('up')">Move Up</button>
     <button onclick="startMoving('down')">Move Down</button>
     <button onclick="stopMoving()">Stop</button>
+</div>
     <div id="container">
         <!--naming the image and picking the image i want to move-->
         <img id="movableImage" src="Pepe.jpg" />
     </div>
     <!-- link to the Java Script command diretional sheet-->
     <script src="Newmoving.js"></script>
+    <footer style="background-color: #19ac39;">
+        <hr>
+        Author: Christerfer James<br>
+        &copy; copyright reserved<br>
+        <small><A href="https://jamesartstudio.weebly.com/contact.html">Click to contact me</a></small>
+    </footer>
 </body>
 </html>

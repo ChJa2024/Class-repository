@@ -11,19 +11,48 @@
     <link rel="stylesheet" href="main2.css">
 </head>
 <body>
+    <header style="background-color: #4a8fb8;">
+        <h1>Palindrome and Login Checker </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="boards.html"> Education</a></li>
+            <li>
+                <a href="#">Class Projects ▾</a>
+                <ul class="dropdown">
+                    <li><a href="event.html">HTML Audio</a></li>
+                    <li><a href="event2.html">Floating Image</a></li>
+                    <li><a href="game.html">Game in HTML</a></li>
+                    <li><a href="strings.html">Palindrome/Login Checker</a></li>
+        </ul>
+        <li><a href="https://jamesartstudio.weebly.com/">My Portfolio</a></li>
+    </nav>
+    <br>
+    <p>
+        **Description:**  
+For this assignment, we were tasked with creating a palm drone checker. This tool allows users to input words into a text field and press enter to determine whether or not the word is a palm drum. Additionally, we were required to develop a login system for a web page. Users will enter a username and password to access a different page. Below, you will see the username and password fields that need to be filled out. Once the correct credentials are entered, the user will be directed to the next page, where they will receive a message confirming a successful login.
+
+    </p>
         <!-- Header text for page -->
-        <h1> Palindrome Checker </h1>
+        <h1> What is a Palindrome </h1>
+        <br>
   <p>
-    Palindrome Checker 
+    Insert text 
   </p>
         <!-- Adding input text for palindrome-->
+        <div class="container">
     <input id="text-input">
     <!-- adding button-->
     <button id="check-btn">Check</button>
     <div id="result"></div>
+    <br>
+        </div>
+
     <!--adding java script 2 for this html page-->
     <script src="script2.js"></script>
 <!-- adding an image to the webpage-->
+ <br>
 <p>
     <img id="validImage" src="valid.jpg">
     <p>
@@ -31,7 +60,9 @@
 <div class="container">
     <!-- header-->
         <div class="container">
-            <h1 class="label">User Login</h1>
+            <br>
+            <h1 class="label">Access the webpage</h1>
+            <br>
             <!--user name and min and max charaters-->
             <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
                 <div class="font">User Name</div>
@@ -44,7 +75,8 @@
                 <div class="font font2">zip</div>
                 <input type="zip" name="zip"
                 placeholder="only digits" pattern="[0-9]{5}"
-                title="Exactly 5 digits" /><br>
+                title="Exactly 5 digits" />
+                <br> <br>
                 <button type="submit">Login</button>
             </form>
             
@@ -52,7 +84,14 @@
     <!-- valadaion script page-->
         <script src="Valid.js"></script>
     </div>
-
+    <br><br><br>  
+    <br>
+    <footer style="background-color: #4a8fb8;">
+        <hr>
+        Author: Christerfer James<br>
+        &copy; copyright reserved<br>
+        <small><A href="https://jamesartstudio.weebly.com/contact.html">Click to contact me</a></small>
+    </footer>
 </body>
 </html>
 

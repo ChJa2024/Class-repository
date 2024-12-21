@@ -1,4 +1,4 @@
-<!-- Christerfer James 19 Nov 2024 -->
+<!-- Christerfer James 19 Dec 2024 -->
  <!-- DOCTYPE this is the forst tag on the ppage and it tells the browser that this an HTML5 page -->
   <!DOCTYPE html>
   <!-- the heml tag goes next -->
@@ -9,10 +9,38 @@
     <title>CSC102 Home Page</title>
     <!-- add a link to our css file-->
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
 </head>
 <!-- THE BODY SECTION HOLD THE TEXT AND IMAGES THAT WE WANT TO SHOW TO THE USER-->
  <body>
-<h1> Welcome to my Home Page for CSC102</h1>
+    <header style="background-color: #19ac39;">
+        <h1>Welcome to my Home Page for CSC102 </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="boards.html"> Education</a></li>
+            <li>
+                <a href="#">Class Projects ▾</a>
+                <ul class="dropdown">
+                    <li><a href="event.html">HTML Audio</a></li>
+                    <li><a href="event2.html">Floating Image</a></li>
+                    <li><a href="game.html">Game in HTML</a></li>
+                    <li><a href="strings.html">Palindrome/Login Checker</a></li>
+        </ul>
+        <li><a href="https://jamesartstudio.weebly.com/">My Portfolio</a></li>
+    </nav>
+    <br><br>
+<h4> Adding images and Links to HTML</h4>
+<br>
+<p>
+    Description: 
+    This assignment demonstrated how to add a picture to an HTML page. Additionally, one of the secondary tasks involved adding a button at the 
+    bottom of the page to link to a game page, which was part of a different assignment but intended to be included on the same page. 
+    Before this experience, I had no knowledge of how HTML pages work or how to create them. This assignment was definitely a stepping stone for me,
+     as I realized I needed to learn different commands and that it is a completely different language in order to progress.
+</p>
+<br>     <br>
 <!-- p is paragraph tag; has spacing around it by default -->
 <p>
     <img id="birdImage" src="bird.jpg">
@@ -22,7 +50,18 @@
 <!-- link to game html-->
 <a href="game.html">
     <!-- Creating a button for the game and styling it-->
+     <br>
+     <div class="myDiv">
 <button style="font-size: 25px; border-radius: 25px;">Start Game</button>
+</div>
 </a>
+<br>
+<br>
+<footer style="background-color: #19ac39;">
+    <hr>
+    Author: Christerfer James<br>
+    &copy; copyright reserved<br>
+    <small><A href="https://jamesartstudio.weebly.com/contact.html">Click to contact me</a></small>
+</footer>
 </body>
    </html>

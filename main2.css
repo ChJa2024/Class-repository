@@ -12,19 +12,77 @@ body{
     color: rgb(0, 0, 0); 
 }
 
-nav{
-    height: 600px;
-    width: 200px;
-    float: left;
-    padding: 5px;
-    line-height: 30px;
-}
-
 footer{
     text-align: center;
-    margin-right: 200px;
 }
 
 h1{
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', monospace;
+}
+
+ul {
+    list-style: none;
+    background: #4a8fb8;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: #8c52ff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: #6d30e9;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+P{
+    text-align: center;
+}
+
+.text-input{
+    text-align: center;
+}
+
+button{
+    background-color: #18b2f9;
+    border: none;
+    position: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container{
     text-align: center;
 }
