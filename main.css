@@ -92,3 +92,8 @@ button{
     font-size: 30px;
     font-weight: bold;
 }
+.Tall{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
